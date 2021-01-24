@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
+import ReactStars from 'react-rating-stars-component';
 const Movie = (props) => {
+    console.log(props.vote);
     return (
         <div className="col s12 m6 l3">
             <div className="card">
@@ -9,7 +11,7 @@ const Movie = (props) => {
                     }
                 </div>
                 <div className="card-content">
-                    <p><a href="#">Vie Details</a></p>
+                    <ReactStars count={props.vote} size={20} color1={'#ffd700'}></ReactStars>
                 </div>
             </div>
 

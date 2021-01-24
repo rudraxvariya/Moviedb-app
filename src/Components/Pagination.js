@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Pagination(props) {
-    console.log(props)
     const pageLinks = [];
     for (let i = 1; i <= props.pages + 1; i++) {
         let active = props.currentPage === i ? "active" : "";
