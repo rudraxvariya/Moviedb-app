@@ -2,7 +2,6 @@ import React from 'react';
 import Movie from './Movie';
 
 const MovieList = (props) => {
-    console.log(props)
     return (
         <div className="container">
             <div className="row">
